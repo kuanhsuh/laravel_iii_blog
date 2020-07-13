@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $name = "Danny";
-    $age = "19";
-    return view('welcome', compact(['name', 'age']));
-    // return "Hello World";
-});
+// Route::get('/', function () {
+//     $name = "Danny";
+//     $age = "19";
+//     return view('welcome', compact(['name', 'age']));
+//     return "Hello World";
+// });
+
+Route::get('/front-page', 'HomeController@frontPage');
+Route::get('/new-page', 'HomeController@newPage');
+
+Route::get('/', 'HomeController@index');
