@@ -22,5 +22,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/front-page', 'HomeController@frontPage');
 Route::get('/new-page', 'HomeController@newPage');
+Route::get('/single-page', 'HomeController@singlePage');
 
 Route::get('/', 'HomeController@index');

@@ -12,10 +12,14 @@ class HomeController extends Controller
     }
     public function frontPage()
     {
-        return view('home.homePage');
+        return view('home.frontPage');
     }
     public function newPage()
     {
         return view('home.newPage');
+    }
+    public function singlePage()
+    {
+        return view('home.singlePost');
     }
 }
